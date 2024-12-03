@@ -38,6 +38,12 @@ for year in range(2014, 2024):
         gdf_gu[col_name] = gdf_gu[col_name].replace({',': ''}, regex=True)  # 콤마 제거
         gdf_gu[col_name] = pd.to_numeric(gdf_gu[col_name], errors='coerce')  # 숫자로 변환
 
+# wide mode 를 디폴트로 바꿔줌 (너무 좁아서 잘 안 보임)
+st.set_page_config(
+    page_title="Wide Mode Dashboard", 
+    layout="wide"  
+)
+
 # streamlit 설정 시작 (제목 등)
 st.title("전체 세대 수 데이터 대시보드")
 st.sidebar.title("옵션 설정")
