@@ -9,8 +9,8 @@ from streamlit_folium import st_folium
 import plotly.express as px
 
 # 필요한 데이터 불러오기
-gdf_gu = gpd.read_file(r"C:\Users\jicso\OneDrive\바탕 화면\24-2학기\데이터 시각화\visualization_data\N3A_G01.json")
-df_1 = pd.read_csv(r"C:\Users\jicso\Streamlit_folder\전국1인가구_전처리.csv")
+gdf_gu = gpd.read_file("N3A_G01.json")
+df_1 = pd.read_csv("전국1인가구_전처리.csv")
 
 
 # 필요한 열만 선택하여 불러오기
