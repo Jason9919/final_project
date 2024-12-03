@@ -1,9 +1,5 @@
-import streamlit as st
-
-# 1인세대가 아닌 전체세대에 대한 대시보드임을 강조
-st.header('전체세대에 대한 대시보드도 만들어봄')
-
 # 필요한 라이브러리 다 불러오기
+import streamlit as st
 import folium
 from folium import GeoJson, GeoJsonTooltip
 import geopandas as gpd
@@ -43,6 +39,9 @@ st.set_page_config(
     page_title="Wide Mode Dashboard", 
     layout="wide"  
 )
+
+# 1인세대가 아닌 전체세대에 대한 대시보드임을 강조
+st.header('전체세대에 대한 대시보드도 만들어봄')
 
 # streamlit 설정 시작 (제목 등)
 st.title("전체 세대 수 데이터 대시보드")
