@@ -1,3 +1,7 @@
+# 학번 : B931239
+# 이름 : 정재성
+# 배포 링크 : https://finalproject-zbgjh9nggrpnhz3qtdu6ko.streamlit.app/
+
 # 필요한 라이브러리 다 불러오기
 import streamlit as st
 import folium
